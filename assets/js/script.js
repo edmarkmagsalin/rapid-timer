@@ -13,7 +13,7 @@ setInterval(() => {
     const currentMinute = now.getMinutes();
     updateCurrent (currentHour, currentMinute);
 
-    const nowAdvanced = new Date((Date.now()+(15*60000)));
+    const nowAdvanced = new Date((Date.now()+(minutesToAdvance*60000)));
     const readingHour = nowAdvanced.getHours();
     const readingMinute = nowAdvanced.getMinutes();
     updateReading (readingHour, readingMinute);
@@ -22,7 +22,7 @@ setInterval(() => {
     colons.forEach(colon => {
         colon.classList.toggle('hide');
     });
-}, 1000)
+}, 1000);
 
 function updateCurrent (hour, minutes) {
     if(hour > 12) {
