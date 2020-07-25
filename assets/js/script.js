@@ -25,11 +25,17 @@ setInterval(() => {
 }, 1000)
 
 function updateCurrent (hour, minutes) {
+    if(hour > 12) {
+        hour-=12;
+    }
     currentH.innerHTML = `${hour < 10 ? 0 : ''}${hour}`;
     currentM.innerHTML = `${minutes < 10 ? 0 : ''}${minutes}`;
 }
 
 function updateReading (hour, minutes) {
+    if(hour > 12) {
+        hour-=12;
+    }
     readingH.innerHTML = `${hour < 10 ? 0 : ''}${hour}`;
     readingM.innerHTML = `${minutes < 10 ? 0 : ''}${minutes}`;
 }
