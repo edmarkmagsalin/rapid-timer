@@ -57,7 +57,8 @@ h1 {
 }
 
 .current, .reading {
-    font-family: "digital", sans-serif;
+    /* font-family: "digital", sans-serif; */
+    font-family: arial sans-serif;
     margin: 0;
     text-align: center;
 }
@@ -80,7 +81,6 @@ h1 {
 .colon {
     opacity: 1;
     transition: ease-out 1s;
-    margin: 0 .8rem;
 }
 
 .colon.hide {
