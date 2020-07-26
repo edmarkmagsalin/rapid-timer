@@ -3,6 +3,10 @@
     src: url("../../assets/font/TickingTimebombBB.ttf");
 }
 @font-face {
+    font-family: "lora";
+    src: url("../../assets/font/Lora-VariableFont_wght.ttf");
+}
+@font-face {
     font-family: "megrim";
     src: url("../../assets/font/Megrim-Regular.ttf");
 }
@@ -59,7 +63,7 @@ h1 {
 .current, .reading {
     /* font-family: "digital", sans-serif; */
     /* font-family: arial sans-serif; */
-    font-family: 'Lora', serif;
+    font-family: 'lora', serif;
     margin: 0;
     text-align: center;
 }
