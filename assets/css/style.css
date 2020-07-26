@@ -80,6 +80,7 @@ h1 {
 .colon {
     opacity: 1;
     transition: ease-out 1s;
+    margin: 0 .8rem;
 }
 
 .colon.hide {
